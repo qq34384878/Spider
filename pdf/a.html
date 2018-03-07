@@ -1,0 +1,1511 @@
+<!DOCTYPE HTML>
+
+<html lang="zh">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <title>1.1-Python3的安装 · Python3网络爬虫开发实战</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="" name="description"/>
+    <meta content="GitBook 3.2.3" name="generator"/>
+    <meta content="Germey" name="author"/>
+    <link href="gitbook/style.css" rel="stylesheet"/>
+    <link href="gitbook/gitbook-plugin-comment/plugin.css" rel="stylesheet"/>
+    <link href="gitbook/gitbook-plugin-highlight/website.css" rel="stylesheet"/>
+    <link href="gitbook/gitbook-plugin-search/search.css" rel="stylesheet"/>
+    <link href="gitbook/gitbook-plugin-fontsettings/website.css" rel="stylesheet"/>
+    <meta content="true" name="HandheldFriendly">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <link href="gitbook/images/apple-touch-icon-precomposed-152.png" rel="apple-touch-icon-precomposed"
+          sizes="152x152"/>
+    <link href="gitbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="1.2-请求库的安装.html" rel="next">
+    <link href="1-开发环境配置.html" rel="prev">
+    </link></link></meta></meta></head>
+<body>
+<div class="book">
+    <div class="book-summary">
+        <div id="book-search-input" role="search">
+            <input placeholder="輸入並搜尋" type="text"/>
+        </div>
+        <nav role="navigation">
+            <ul class="summary">
+                <li>
+                    <a class="custom-link" href="https://www.gitbook.com/book/germey/python3webspider" target="_blank">Python3网络爬虫开发实战</a>
+                </li>
+                <li class="divider"></li>
+                <li class="chapter " data-level="1.1" data-path="./">
+                    <a href="./">
+
+
+                        前言
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.2" data-path="0-目录.html">
+                    <a href="0-目录.html">
+
+
+                        目录
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.3" data-path="1-开发环境配置.html">
+                    <a href="1-开发环境配置.html">
+
+
+                        第一章 开发环境配置
+
+                    </a>
+                </li>
+                <li class="chapter active" data-level="1.4" data-path="1.1-Python3的安装.html">
+                    <a href="1.1-Python3的安装.html">
+
+
+                        1.1-Python3的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.5" data-path="1.2-请求库的安装.html">
+                    <a href="1.2-请求库的安装.html">
+
+
+                        1.2-请求库的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.6" data-path="1.2.1-Requests的安装.html">
+                    <a href="1.2.1-Requests的安装.html">
+
+
+                        1.2.1-Requests的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.7" data-path="1.2.2-Selenium的安装.html">
+                    <a href="1.2.2-Selenium的安装.html">
+
+
+                        1.2.2-Selenium的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.8" data-path="1.2.3-ChromeDriver的安装.html">
+                    <a href="1.2.3-ChromeDriver的安装.html">
+
+
+                        1.2.3-ChromeDriver的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.9" data-path="1.2.4-GeckoDriver的安装.html">
+                    <a href="1.2.4-GeckoDriver的安装.html">
+
+
+                        1.2.4-GeckoDriver的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.10" data-path="1.2.5-PhantomJS的安装.html">
+                    <a href="1.2.5-PhantomJS的安装.html">
+
+
+                        1.2.5-PhantomJS的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.11" data-path="1.2.6-Aiohttp的安装.html">
+                    <a href="1.2.6-Aiohttp的安装.html">
+
+
+                        1.2.6-Aiohttp的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.12" data-path="1.3-解析库的安装.html">
+                    <a href="1.3-解析库的安装.html">
+
+
+                        1.3-解析库的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.13" data-path="1.3.1-LXML的安装.html">
+                    <a href="1.3.1-LXML的安装.html">
+
+
+                        1.3.1-LXML的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.14" data-path="1.3.2-BeautifulSoup的安装.html">
+                    <a href="1.3.2-BeautifulSoup的安装.html">
+
+
+                        1.3.2-BeautifulSoup的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.15" data-path="1.3.3-PyQuery的安装.html">
+                    <a href="1.3.3-PyQuery的安装.html">
+
+
+                        1.3.3-PyQuery的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.16" data-path="1.3.4-Tesserocr的安装.html">
+                    <a href="1.3.4-Tesserocr的安装.html">
+
+
+                        1.3.4-Tesserocr的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.17" data-path="1.4-数据库的安装.html">
+                    <a href="1.4-数据库的安装.html">
+
+
+                        1.4-数据库的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.18" data-path="1.4.1-MySQL的安装.html">
+                    <a href="1.4.1-MySQL的安装.html">
+
+
+                        1.4.1-MySQL的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.19" data-path="1.4.2-MongoDB的安装.html">
+                    <a href="1.4.2-MongoDB的安装.html">
+
+
+                        1.4.2-MongoDB的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.20" data-path="1.4.3-Redis的安装.html">
+                    <a href="1.4.3-Redis的安装.html">
+
+
+                        1.4.3-Redis的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.21" data-path="1.5-存储库的安装.html">
+                    <a href="1.5-存储库的安装.html">
+
+
+                        1.5-存储库的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.22" data-path="1.5.1-PyMySQL的安装.html">
+                    <a href="1.5.1-PyMySQL的安装.html">
+
+
+                        1.5.1-PyMySQL的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.23" data-path="1.5.2-PyMongo的安装.html">
+                    <a href="1.5.2-PyMongo的安装.html">
+
+
+                        1.5.2-PyMongo的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.24" data-path="1.5.3-RedisPy的安装.html">
+                    <a href="1.5.3-RedisPy的安装.html">
+
+
+                        1.5.3-RedisPy的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.25" data-path="1.5.4-RedisDump的安装.html">
+                    <a href="1.5.4-RedisDump的安装.html">
+
+
+                        1.5.4-RedisDump的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.26" data-path="1.6-Web库的安装.html">
+                    <a href="1.6-Web库的安装.html">
+
+
+                        1.6-Web库的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.27" data-path="1.6.1-Flask的安装.html">
+                    <a href="1.6.1-Flask的安装.html">
+
+
+                        1.6.1-Flask的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.28" data-path="1.6.2-Tornado的安装.html">
+                    <a href="1.6.2-Tornado的安装.html">
+
+
+                        1.6.2-Tornado的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.29" data-path="1.7-APP爬取相关库的安装.html">
+                    <a href="1.7-APP爬取相关库的安装.html">
+
+
+                        1.7-APP爬取相关库的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.30" data-path="1.7.1-Charles的安装.html">
+                    <a href="1.7.1-Charles的安装.html">
+
+
+                        1.7.1-Charles的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.31" data-path="1.7.2-MitmProxy的安装.html">
+                    <a href="1.7.2-MitmProxy的安装.html">
+
+
+                        1.7.2-MitmProxy的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.32" data-path="1.7.3-Appium的安装.html">
+                    <a href="1.7.3-Appium的安装.html">
+
+
+                        1.7.3-Appium的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.33" data-path="1.8-爬虫框架的安装.html">
+                    <a href="1.8-爬虫框架的安装.html">
+
+
+                        1.8-爬虫框架的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.34" data-path="1.8.1-PySpider的安装.html">
+                    <a href="1.8.1-PySpider的安装.html">
+
+
+                        1.8.1-PySpider的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.35" data-path="1.8.2-Scrapy的安装.html">
+                    <a href="1.8.2-Scrapy的安装.html">
+
+
+                        1.8.2-Scrapy的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.36" data-path="1.8.3-ScrapySplash的安装.html">
+                    <a href="1.8.3-ScrapySplash的安装.html">
+
+
+                        1.8.3-ScrapySplash的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.37" data-path="1.8.4-ScrapyRedis的安装.html">
+                    <a href="1.8.4-ScrapyRedis的安装.html">
+
+
+                        1.8.4-ScrapyRedis的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.38" data-path="1.9-部署相关库的安装.html">
+                    <a href="1.9-部署相关库的安装.html">
+
+
+                        1.9-部署相关库的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.39" data-path="1.9.1-Docker的安装.html">
+                    <a href="1.9.1-Docker的安装.html">
+
+
+                        1.9.1-Docker的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.40" data-path="1.9.2-Scrapyd的安装.html">
+                    <a href="1.9.2-Scrapyd的安装.html">
+
+
+                        1.9.2-Scrapyd的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.41" data-path="1.9.3-ScrapydClient的安装.html">
+                    <a href="1.9.3-ScrapydClient的安装.html">
+
+
+                        1.9.3-ScrapydClient的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.42" data-path="1.9.4-ScrapydAPI的安装.html">
+                    <a href="1.9.4-ScrapydAPI的安装.html">
+
+
+                        1.9.4-ScrapydAPI的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.43" data-path="1.9.5-Scrapyrt的安装.html">
+                    <a href="1.9.5-Scrapyrt的安装.html">
+
+
+                        1.9.5-Scrapyrt的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.44" data-path="1.9.6-Gerapy的安装.html">
+                    <a href="1.9.6-Gerapy的安装.html">
+
+
+                        1.9.6-Gerapy的安装
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.45" data-path="2-爬虫基础.html">
+                    <a href="2-爬虫基础.html">
+
+
+                        第二章 爬虫基础
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.46" data-path="2.1-HTTP基本原理.html">
+                    <a href="2.1-HTTP基本原理.html">
+
+
+                        2.1-HTTP基本原理
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.47" data-path="2.2-Web网页基础.html">
+                    <a href="2.2-Web网页基础.html">
+
+
+                        2.2-Web网页基础
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.48" data-path="2.3-爬虫基本原理.html">
+                    <a href="2.3-爬虫基本原理.html">
+
+
+                        2.3-爬虫基本原理
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.49" data-path="2.4-Session和Cookies.html">
+                    <a href="2.4-Session和Cookies.html">
+
+
+                        2.4-Session和Cookies
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.50" data-path="2.5-代理基本原理.html">
+                    <a href="2.5-代理基本原理.html">
+
+
+                        2.5-代理基本原理
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.51" data-path="3-基本库的使用.html">
+                    <a href="3-基本库的使用.html">
+
+
+                        第三章 基本库的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.52" data-path="3.1-使用Urllib.html">
+                    <a href="3.1-使用Urllib.html">
+
+
+                        3.1-使用Urllib
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.53" data-path="3.1.1-发送请求.html">
+                    <a href="3.1.1-发送请求.html">
+
+
+                        3.1.1-发送请求
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.54" data-path="3.1.2-处理异常.html">
+                    <a href="3.1.2-处理异常.html">
+
+
+                        3.1.2-处理异常
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.55" data-path="3.1.3-解析链接.html">
+                    <a href="3.1.3-解析链接.html">
+
+
+                        3.1.3-解析链接
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.56" data-path="3.1.4-分析Robots协议.html">
+                    <a href="3.1.4-分析Robots协议.html">
+
+
+                        3.1.4-分析Robots协议
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.57" data-path="3.2-使用Requests.html">
+                    <a href="3.2-使用Requests.html">
+
+
+                        3.2-使用Requests
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.58" data-path="3.2.1-基本使用.html">
+                    <a href="3.2.1-基本使用.html">
+
+
+                        3.2.1-基本使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.59" data-path="3.2.3-高级用法.html">
+                    <a href="3.2.3-高级用法.html">
+
+
+                        3.2.3-高级用法
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.60" data-path="3.3-正则表达式.html">
+                    <a href="3.3-正则表达式.html">
+
+
+                        3.3-正则表达式
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.61" data-path="3.4-Requests与正则表达式爬取猫眼电影排行.html">
+                    <a href="3.4-Requests与正则表达式爬取猫眼电影排行.html">
+
+
+                        3.4-Requests与正则表达式爬取猫眼电影排行
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.62" data-path="4-解析库的使用.html">
+                    <a href="4-解析库的使用.html">
+
+
+                        第四章 解析库的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.63" data-path="4.1-XPath的使用.html">
+                    <a href="4.1-XPath的使用.html">
+
+
+                        4.1-XPath的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.64" data-path="4.2-BeautifulSoup的使用.html">
+                    <a href="4.2-BeautifulSoup的使用.html">
+
+
+                        4.2-BeautifulSoup的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.65" data-path="4.3-PyQuery的使用.html">
+                    <a href="4.3-PyQuery的使用.html">
+
+
+                        4.3-PyQuery的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.66" data-path="5-数据存储.html">
+                    <a href="5-数据存储.html">
+
+
+                        第五章 数据存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.67" data-path="5.1-文件存储.html">
+                    <a href="5.1-文件存储.html">
+
+
+                        5.1-文件存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.68" data-path="5.1.1-TXT文本存储.html">
+                    <a href="5.1.1-TXT文本存储.html">
+
+
+                        5.1.1-TXT文本存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.69" data-path="5.1.2-Json文件存储.html">
+                    <a href="5.1.2-Json文件存储.html">
+
+
+                        5.1.2-Json文件存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.70" data-path="5.1.3-CSV文件存储.html">
+                    <a href="5.1.3-CSV文件存储.html">
+
+
+                        5.1.3-CSV文件存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.71" data-path="5.2-关系型数据库存储.html">
+                    <a href="5.2-关系型数据库存储.html">
+
+
+                        5.2-关系型数据库存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.72" data-path="5.2.1-MySQL存储.html">
+                    <a href="5.2.1-MySQL存储.html">
+
+
+                        5.2.1-MySQL存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.73" data-path="5.3-非关系型数据库存储.html">
+                    <a href="5.3-非关系型数据库存储.html">
+
+
+                        5.3-非关系型数据库存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.74" data-path="5.3.1-MongoDB存储.html">
+                    <a href="5.3.1-MongoDB存储.html">
+
+
+                        5.3.1-MongoDB存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.75" data-path="5.3.2-Redis存储.html">
+                    <a href="5.3.2-Redis存储.html">
+
+
+                        5.3.2-Redis存储
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.76" data-path="6-Ajax数据爬取.html">
+                    <a href="6-Ajax数据爬取.html">
+
+
+                        第六章 Ajax数据爬取
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.77" data-path="6.1-什么是Ajax.html">
+                    <a href="6.1-什么是Ajax.html">
+
+
+                        6.1-什么是Ajax
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.78" data-path="6.2-Ajax分析方法.html">
+                    <a href="6.2-Ajax分析方法.html">
+
+
+                        6.2-Ajax分析方法
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.79" data-path="6.3-Ajax结果提取.html">
+                    <a href="6.3-Ajax结果提取.html">
+
+
+                        6.3-Ajax结果提取
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.80" data-path="6.4-分析Ajax爬取今日头条街拍美图.html">
+                    <a href="6.4-分析Ajax爬取今日头条街拍美图.html">
+
+
+                        6.4-分析Ajax爬取今日头条街拍美图
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.81" data-path="7-动态渲染页面抓取.html">
+                    <a href="7-动态渲染页面抓取.html">
+
+
+                        第七章 动态渲染页面抓取
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.82" data-path="7.1-Selenium的使用.html">
+                    <a href="7.1-Selenium的使用.html">
+
+
+                        7.1-Selenium的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.83" data-path="7.2-Splash的使用.html">
+                    <a href="7.2-Splash的使用.html">
+
+
+                        7.2-Splash的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.84" data-path="7.3-Splash负载均衡配置.html">
+                    <a href="7.3-Splash负载均衡配置.html">
+
+
+                        7.3-Splash负载均衡配置
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.85" data-path="7.4-使用Selenium爬取淘宝商品.html">
+                    <a href="7.4-使用Selenium爬取淘宝商品.html">
+
+
+                        7.4-使用Selenium爬取淘宝商品
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.86" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        第八章 验证码的识别
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.87" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        8.1-图形验证码的识别
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.88" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        8.2-极验滑动验证码识别
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.89" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        8.3-点触验证码识别
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.90" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        8.4-微博宫格验证码识别
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.91" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        第九章 代理的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.92" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        9.1-代理的设置
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.93" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        9.2-代理池的维护
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.94" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        9.3-付费代理的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.95" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        9.4-ADSL代理的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.96" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        9.5-使用代理爬取微信公众号文章
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.97" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        第十章 模拟登录
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.98" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        10.1-模拟登录并爬取GitHub
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.99" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        10.2-Cookies池的搭建
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.100" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        第十一章 APP的爬取
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.101" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        11.1-Charles的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.102" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        11.2-MitmProxy的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.103" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        11.3-MitmDump爬取得到APP电子书信息
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.104" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        11.4-Appium的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.105" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        11.5-Appium爬取微信朋友圈
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.106" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        11.6-Appium+MitmProxy爬取京东商品评论
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.107" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        第十二章 PySpider框架的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.108" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        12.1-PySpider框架介绍
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.109" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        12.2-PySpider基本使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.110" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        12.3-PySpider用法详解
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.111" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        第十三章 Scrapy框架的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.112" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.1-Scrapy框架介绍
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.113" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.2-Scrapy入门
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.114" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.3-Selector的用法
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.115" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.4-Spider的用法
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.116" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.5-Downloader Middleware的用法
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.117" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.6-Spider Middleware的用法
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.118" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.7-Item Pipeline的用法
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.119" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.8-Scrapy对接Selenium
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.120" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.9-Scrapy对接Splash
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.121" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.10-Scrapy通用爬虫
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.122" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.11-Scrapyrt的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.123" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.12-Scrapy对接Docker
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.124" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        13.13-Scrapy爬取新浪微博
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.125" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        第十四章 分布式爬虫
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.126" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        14.1-分布式爬虫理念
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.127" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        14.2-ScrapyRedis源码解析
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.128" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        14.3-Scrapy分布式实现
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.129" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        14.4-BloomFilter的对接
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.130" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        第十五章 分布式爬虫的部署
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.131" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        15.1-Scrapyd分布式部署
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.132" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        15.2-ScrapydClient的使用
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.133" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        15.3-Scrapyd对接Docker
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.134" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        15.4-Scrapyd批量部署
+
+                    </a>
+                </li>
+                <li class="chapter " data-level="1.135" data-path="VIP.html">
+                    <a href="VIP.html">
+
+
+                        15.5-Gerapy分布式管理
+
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a class="gitbook-link" href="https://www.gitbook.com" target="blank">
+                        本書使用 GitBook 釋出
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation"><!-- Title -->
+                <h1>
+                    <i class="fa fa-circle-o-notch fa-spin"></i>
+                    <a href=".">1.1-Python3的安装</a>
+                </h1>
+            </div>
+            <div class="page-wrapper" role="main" tabindex="-1">
+                <div class="page-inner">
+                    <div id="book-search-results">
+                        <div class="search-noresults">
+                            <section class="normal markdown-section">
+                                <h1 id="11-python3的安装">1.1 Python3的安装</h1>
+                                <p>既然要用 Python3 开发爬虫，那么第一步一定是安装 Python3，本节会介绍 Windows、Linux、Mac 三大平台下安装 Python3 的过程。</p>
+                                <h3 id="1-相关链接">1. 相关链接</h3>
+                                <ul>
+                                    <li>官方网站：<a href="http://python.org" target="_blank">http://python.org</a></li>
+                                    <li>下载地址：<a href="https://www.python.org/downloads" target="_blank">https://www.python.org/downloads</a>
+                                    </li>
+                                    <li>第三方库：<a href="https://pypi.python.org/pypi" target="_blank">https://pypi.python.org/pypi</a>
+                                    </li>
+                                    <li>官方文档：<a href="https://docs.python.org/3" target="_blank">https://docs.python.org/3</a>
+                                    </li>
+                                    <li>中文教程：<a href="http://www.runoob.com/python3/python3-tutorial.html"
+                                                target="_blank">http://www.runoob.com/python3/python3-tutorial.html</a>
+                                    </li>
+                                    <li>Awesome Python：<a href="https://github.com/vinta/awesome-python"
+                                                          target="_blank">https://github.com/vinta/awesome-python</a>
+                                    </li>
+                                    <li>Awesome Python 中文版：<a href="https://github.com/jobbole/awesome-python-cn"
+                                                              target="_blank">https://github.com/jobbole/awesome-python-cn</a>
+                                    </li>
+                                </ul>
+                                <h3 id="2-windows下的安装">2. Windows下的安装</h3>
+                                <p>Windows 下安装 Python3 的方式有两种，一种是通过 Anaconda 安装，Anaconda 提供了 Python 的科学计算环境，里面自带了 Python
+                                    以及常用的库，如果选用了此种方式后面的环境配置方式会更加简便，另一种是直接下载安装包安装，即标准的安装方式。下面会依次介绍这两种安装方式，任选其一即可。</p>
+                                <h4 id="anaconda安装">Anaconda安装</h4>
+                                <p>Anaconda的 官方下载链接为：<a href="https://www.continuum.io/downloads" target="_blank">https://www.continuum.io/downloads</a>，选择
+                                    Python3 版本的安装包下载即可，如图 1-1 所示：</p>
+                                <p><img alt="" src="assets/1-1.jpg"/></p>
+                                <p>图 1-1 Anaconda Windows 下载页面</p>
+                                <p>如果下载速度过慢可以选择使用清华大学镜像，下载列表链接为：<a
+                                        href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" target="_blank">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a>，使用说明链接为：<a
+                                        href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/" target="_blank">https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/</a>，可以选择需要的版本进行下载，速度相比官网会快很多。
+                                </p>
+                                <p>下载完成之后直接双击运行安装包安装即可，安装完成之后Python3的环境就配置好了。</p>
+                                <h4 id="安装包安装">安装包安装</h4>
+                                <p>推荐直接下载可执行文件安装包安装，到官方网站下载Python3安装包。</p>
+                                <p><a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>
+                                </p>
+                                <p>到目前为止，Python 的最新版本是 3.6.2，最新版本以官网为准，如 Python3.6.2 的下载链接为：<a
+                                        href="https://www.python.org/downloads/release/python-362/" target="_blank">https://www.python.org/downloads/release/python-362/</a>，下载页面如图
+                                    1-2 所示：</p>
+                                <p><img alt="" src="assets/1-2.jpg"/></p>
+                                <p>图 1-2 Python 下载页面</p>
+                                <p>64 位系统可以下载 Windows x86-64 executable installer，32 位系统可以下载 Windows x86 executable
+                                    installer。</p>
+                                <p>下载完成之后，直接双击运行 Python 安装包，使用图形界面安装，设置好 Python 的安装路径，完成后将 Python3和 Python3 的 Scripts
+                                    目录配置到环境变量即可。</p>
+                                <p>环境变量的配置，此处以 Win10 系统为例进行演示。</p>
+                                <p>假如我安装后的 Python3 路径为 C:\Python36，从资源管理器中打开该路径，如图 1-3 所示：</p>
+                                <p><img alt="" src="assets/1-3.jpg"/></p>
+                                <p>图 1-3 Python 安装目录</p>
+                                <p>将该路径复制下来。</p>
+                                <p>随后打开电脑-属性，如图 1-4 所示：</p>
+                                <p><img alt="" src="assets/1-4.jpg"/></p>
+                                <p>图 1-4 系统属性</p>
+                                <p>点击左侧的高级系统设置，即可看到在弹出的窗口中下方有环境变量按钮，如图 1-5 所示：</p>
+                                <p><img alt="" src="assets/1-5.jpg"/></p>
+                                <p>图 1-5 高级系统设置</p>
+                                <p>点击环境变量，找到系统变量下的 Path 变量，随后点击编辑按钮，如图 1-6 所示：</p>
+                                <p><img alt="" src="assets/1-6.jpg"/></p>
+                                <p>图 1-6 环境变量</p>
+                                <p>随后点击新建，新建一个条目，将刚才拷贝的 C:\Python36 复制进去，当然此处的路径就是你的 Python3 安装目录，请自行替换，然后再把
+                                    C:\Python36\Scripts 路径复制进去，如图 1-7 所示：</p>
+                                <p><img alt="" src="assets/1-7.jpg"/></p>
+                                <p>图 1-7 编辑环境变量</p>
+                                <p>最后点击确定即可完成环境变量的配置。</p>
+                                <p>配置好环境变量之后，我们就可以直接在命令行直接执行环境变量路径下的可执行文件了，如 python、pip 等命令。</p>
+                                <h4 id="添加别名">添加别名</h4>
+                                <p>以上两种安装方式任选其一即可完成安装，但如果我们之前安装过 Python2 的话，可能会导致版本冲突问题，比如在命令行下输入 python 就不知道是调用的
+                                    Python2 还是 Python3 了，为了解决这个问题，建议将安装目录中的 python.exe 复制一份，命名为 python3.exe，这样便可以调用
+                                    python3 命令了，实际上和 python 命令是完全一致的，这样可以更好地区分 Python 版本，当然如果没有安装过 Python2
+                                    的话也建议添加此别名，添加完毕之后如图 1-8 所示：</p>
+                                <p><img alt="" src="assets/1-8.jpg"/></p>
+                                <p>图 1-8 添加别名</p>
+                                <p>对于 Pip 来说，安装包中自带了 pip3.exe 可执行文件，我们也可以直接使用 pip3 命令，无需额外配置。</p>
+                                <h4 id="测试验证">测试验证</h4>
+                                <p>安装完成之后我们可以通过命令行测试一下安装是否成功，在开始菜单搜索 cmd，找到命令提示符，就进入了命令行模式，输入 python 测试一下能否成功调用
+                                    python，如果添加了别名的话可以输入 python3 测试，在这里输入的是 python3，如图 1-9 所示：</p>
+                                <p><img alt="" src="assets/1-9.jpg"/></p>
+                                <p>图 1-9 测试验证页面</p>
+                                <p>类似输出结果如下：</p>
+                                <pre><code class="lang-python">$ python3
+Python <span class="hljs-number">3.6</span><span class="hljs-number">.1</span> (v3<span
+                                            class="hljs-number">.6</span><span class="hljs-number">.1</span>:<span
+                                            class="hljs-number">69</span>c0db5, Mar <span class="hljs-number">21</span> <span
+                                            class="hljs-number">2017</span>, <span class="hljs-number">17</span>:<span
+                                            class="hljs-number">54</span>:<span
+                                            class="hljs-number">52</span>) [MSC v<span class="hljs-number">.1900</span> <span
+                                            class="hljs-number">32</span> bit (Intel)] on win32
+Type <span class="hljs-string">"help"</span>, <span class="hljs-string">"copyright"</span>, <span class="hljs-string">"credits"</span> <span
+                                            class="hljs-keyword">or</span> <span
+                                            class="hljs-string">"license"</span> <span class="hljs-keyword">for</span> more information.
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">&amp;apos;Hello World&amp;apos;</span>)
+Hello World
+<span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$ pip3 -V
+pip <span class="hljs-number">9.0</span><span class="hljs-number">.1</span> <span class="hljs-keyword">from</span> c:\python36\lib\site-packages (python <span
+                                            class="hljs-number">3.6</span>)
+</code></pre>
+                                <p>如果出现类似上面的提示，则证明 Python3 和 Pip3 均安装成功，如果提示命令不存在，那么请检查下环境变量的配置情况。</p>
+                                <h3 id="3-linux下的安装">3. Linux下的安装</h3>
+                                <p>Linux 下安装方式有多种，命令安装、源码安装、Anaconda 安装。</p>
+                                <p>使用源码安装需要自行编译，时间较长。推荐使用系统自带命令或 Anaconda 安装，简单高效。在这里对各种安装方式分别予以讲解。</p>
+                                <h4 id="命令行安装">命令行安装</h4>
+                                <p>不同的 Linux 发行版本安装方式又有不同，在此分别予以介绍。</p>
+                                <h5 id="centos、redhat">CentOS、RedHat</h5>
+                                <p>如果是 CentOS 或 RedHat 版本，使用 yum 命令安装即可。</p>
+                                <p>下面列出了 Python3.5 和 3.4 两个版本的安装方法，可以自行选择。</p>
+                                <p>Python3.5 版本：</p>
+                                <pre><code>sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+sudo yum update
+sudo yum install -y python35u python35u-libs python35u-devel python35u-pip
+</code></pre>
+                                <p>执行完毕之后便可以成功安装 Python3.5 及 Pip3。</p>
+                                <p>Python3.4 版本：</p>
+                                <pre><code>sudo yum groupinstall -y development tools
+sudo yum install -y epel-release python34-devel  libxslt-devel libxml2-devel openssl-devel
+sudo yum install -y python34
+sudo yum install -y python34-setuptools
+sudo easy_install-3.4 pip
+</code></pre>
+                                <p>执行完毕之后便可以成功安装 Python3.4 及 Pip3。</p>
+                                <h5 id="ubuntu、debian、deepin">Ubuntu、Debian、Deepin</h5>
+                                <p>首先安装 Python3，使用 apt-get 安装即可，在安装前还需安装一些基础库，命令如下：</p>
+                                <pre><code>sudo apt-get install -y python3-dev build-essential libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev zlib1g-dev libcurl4-openssl-dev
+sudo apt-get install -y python3
+</code></pre>
+                                <p>执行完如上命令之后就可以成功安装好 Python3 了。</p>
+                                <p>然后还需要安装 Pip3，仍然使用 apt-get 安装即可，命令如下：</p>
+                                <pre><code>sudo apt-get install -y python3-pip
+</code></pre>
+                                <p>执行完毕之后便可以成功安装 Python3 及 Pip3。</p>
+                                <h4 id="源码安装">源码安装</h4>
+                                <p>如果命令行安装方式有问题，还可以下载 Python3 源码进行安装。</p>
+                                <p>源码下载地址为：<a href="https://www.python.org/ftp/python/" target="_blank">https://www.python.org/ftp/python/</a>，可以自行选用想要的版本进行安装，在此以
+                                    Python3.6.2 为例进行说明，安装路径设置为 /usr/local/python3。</p>
+                                <p>首先创建安装目录，命令如下：</p>
+                                <pre><code>sudo mkdir /usr/local/python3
+</code></pre>
+                                <p>随后下载安装包并解压进入，命令如下：</p>
+                                <pre><code>wget --no-check-certificate https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tgz
+tar -xzvf Python-3.6.2.tgz
+cd Python-3.6.2
+</code></pre>
+                                <p>接下来编译安装，所需时间可能较长，请耐心等待，命令如下：</p>
+                                <pre><code>sudo ./configure --prefix=/usr/local/python3
+sudo make
+sudo make install
+</code></pre>
+                                <p>安装完成之后创建 Python3 链接，命令如下：</p>
+                                <pre><code>sudo ln -s /usr/local/python3/bin/python3 /usr/bin/python3
+</code></pre>
+                                <p>随后下载 Pip 安装包并安装，命令如下：</p>
+                                <pre><code>wget --no-check-certificate https://github.com/pypa/pip/archive/9.0.1.tar.gz
+tar -xzvf 9.0.1.tar.gz
+cd pip-9.0.1
+python3 setup.py install
+</code></pre>
+                                <p>安装完成后再创建 Pip3 链接，命令如下：</p>
+                                <pre><code>sudo ln -s /usr/local/python3/bin/pip /usr/bin/pip3
+</code></pre>
+                                <p>这样就成功安装好了 Python3 及 Pip3。</p>
+                                <h4 id="anaconda安装">Anaconda安装</h4>
+                                <p>Anaconda 同样支持 Linux，Anaconda 的官方下载链接为：<a href="[https:/www.continuum.io/downloads">https://www.continuum.io/downloads</a>，选择
+                                    Python3 版本的安装包下载即可，如图 1-10 所示：</p>
+                                <p><img alt="" src="assets/1-10.jpg"/></p>
+                                <p>图 1-10 Anaconda Linux 下载页面</p>
+                                <p>如果下载速度过慢同样可以使用清华镜像，参考 Windows 部分的介绍，在此不再赘述。</p>
+                                <h4 id="测试验证">测试验证</h4>
+                                <p>命令行测试 Python3 和 Pip3 是否安装成功。</p>
+                                <pre><code>$ python3
+Python 3.5.2 (default, Nov 17 2016, 17:05:23)
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; exit()
+$ pip3 -V
+pip 8.1.1 from /usr/lib/python3/dist-packages (python 3.5)
+</code></pre>
+                                <p>如出现类似上面的提示，则证明 Python3 和 Pip3 安装成功。</p>
+                                <h3 id="4-mac下的安装">4. Mac下的安装</h3>
+                                <p>在 Mac 下同样有多种安装方式，如 Homebrew、安装包安装、Anaconda 安装等，推荐使用 Homebrew 安装。</p>
+                                <h4 id="homebrew安装">Homebrew安装</h4>
+                                <p>Homebrew 是 Mac 平台下强大的包管理工具，首先安装 Homebrew，官方网站是：<a href="https://brew.sh/"
+                                                                                     target="_blank">https://brew.sh/</a>。
+                                </p>
+                                <p>执行如下命令即可安装 Homebrew：</p>
+                                <pre><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+</code></pre>
+                                <p>安装完成后便可以使用 brew 命令安装 Python3 和 Pip3 了。</p>
+                                <pre><code>brew install python3
+</code></pre>
+                                <p>命令执行完成之后发现 Python3 和 Pip3 均已经安装成功。</p>
+                                <h4 id="安装包安装">安装包安装</h4>
+                                <p>可以到官方网站下载 Python3 安装包。链接为：<a href="https://www.python.org/downloads/"
+                                                                target="_blank">https://www.python.org/downloads/</a>，页面如图
+                                    1-11 所示：</p>
+                                <p><img alt="" src="assets/1-11.jpg"/></p>
+                                <p>图 1-11 Python 下载页面</p>
+                                <p>Mac 平台下可以选择下载 Mac OS X 64-bit/32-bit installer，下载完成之后打开安装包按照提示安装即可。</p>
+                                <h4 id="anaconda安装">Anaconda安装</h4>
+                                <p>Anaconda 同样支持 Mac，Anaconda 的官方下载链接为：<a href="[https:/www.continuum.io/downloads">https://www.continuum.io/downloads</a>，选择
+                                    Python3 版本的安装包下载即可，如图 1-12 所示：</p>
+                                <p><img alt="" src="assets/1-12.jpg"/></p>
+                                <p>图 1-12 Anaconda Mac 下载页面</p>
+                                <p>如果下载速度过慢同样可以使用清华镜像，参考 Windows 部分的介绍，在此不再赘述。</p>
+                                <h4 id="测试验证">测试验证</h4>
+                                <p>打开终端，在命令行测试 Python3 和 Pip3 是否成功安装，如图 1-13 所示：</p>
+                                <p><img alt="" src="assets/1-13.jpg"/></p>
+                                <p>图 1-13 测试验证页面</p>
+                                <p>如出现上面的提示，则证明 Python3 和 Pip3 安装成功。</p>
+                                <h3 id="5-结语">5. 结语</h3>
+                                <p>本节介绍了三大平台 Windows、Linux、Mac 下 Python3 的安装方式，安装完成之后我们便可以开启 Python 爬虫的征程了。</p>
+                            </section>
+                        </div>
+                        <div class="search-results">
+                            <div class="has-results">
+                                <h1 class="search-results-title"><span class="search-results-count"></span> results
+                                    matching "<span class="search-query"></span>"</h1>
+                                <ul class="search-results-list"></ul>
+                            </div>
+                            <div class="no-results">
+                                <h1 class="search-results-title">No results matching "<span class="search-query"></span>"
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a aria-label="Previous page: 第一章 开发环境配置" class="navigation navigation-prev " href="1-开发环境配置.html">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a aria-label="Next page: 1.2-请求库的安装" class="navigation navigation-next " href="1.2-请求库的安装.html">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function () {
+            gitbook.page.hasChanged({
+                "page": {
+                    "title": "1.1-Python3的安装",
+                    "level": "1.4",
+                    "depth": 1,
+                    "next": {
+                        "title": "1.2-请求库的安装",
+                        "level": "1.5",
+                        "depth": 1,
+                        "path": "1.2-请求库的安装.md",
+                        "ref": "1.2-请求库的安装.md",
+                        "articles": []
+                    },
+                    "previous": {
+                        "title": "第一章 开发环境配置",
+                        "level": "1.3",
+                        "depth": 1,
+                        "path": "1-开发环境配置.md",
+                        "ref": "1-开发环境配置.md",
+                        "articles": []
+                    },
+                    "dir": "ltr"
+                },
+                "config": {
+                    "plugins": ["comment"],
+                    "styles": {
+                        "website": "styles/website.css",
+                        "pdf": "styles/pdf.css",
+                        "epub": "styles/epub.css",
+                        "mobi": "styles/mobi.css",
+                        "ebook": "styles/ebook.css",
+                        "print": "styles/print.css"
+                    },
+                    "pluginsConfig": {
+                        "comment": {"highlightCommented": true},
+                        "highlight": {},
+                        "search": {},
+                        "lunr": {"maxIndexSize": 1000000, "ignoreSpecialCharacters": false},
+                        "sharing": {
+                            "facebook": true,
+                            "twitter": true,
+                            "google": false,
+                            "weibo": false,
+                            "instapaper": false,
+                            "vk": false,
+                            "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+                        },
+                        "fontsettings": {"theme": "white", "family": "sans", "size": 2},
+                        "theme-default": {
+                            "styles": {
+                                "website": "styles/website.css",
+                                "pdf": "styles/pdf.css",
+                                "epub": "styles/epub.css",
+                                "mobi": "styles/mobi.css",
+                                "ebook": "styles/ebook.css",
+                                "print": "styles/print.css"
+                            }, "showLevel": false
+                        }
+                    },
+                    "github": "Germey/Python3WebSpider",
+                    "theme": "default",
+                    "author": "Germey",
+                    "pdf": {
+                        "pageNumbers": true,
+                        "fontSize": 16,
+                        "fontFamily": "Arial",
+                        "paperSize": "a4",
+                        "chapterMark": "pagebreak",
+                        "pageBreaksBefore": "/",
+                        "margin": {"right": 62, "left": 62, "top": 56, "bottom": 56}
+                    },
+                    "structure": {
+                        "langs": "LANGS.md",
+                        "readme": "README.md",
+                        "glossary": "GLOSSARY.md",
+                        "summary": "SUMMARY.md"
+                    },
+                    "variables": {},
+                    "title": "Python3网络爬虫开发实战",
+                    "language": "zh",
+                    "links": {
+                        "sidebar": {"Python3网络爬虫开发实战": "https://www.gitbook.com/book/germey/python3webspider"},
+                        "gitbook": true
+                    },
+                    "gitbook": "*",
+                    "description": "本书通过大量实战案例详细介绍了Python3网络爬虫的要点。"
+                },
+                "file": {"path": "1.1-Python3的安装.md", "mtime": "2018-02-04T10:55:42.000Z", "type": "markdown"},
+                "gitbook": {"version": "3.2.3", "time": "2018-02-04T10:58:01.247Z"},
+                "basePath": ".",
+                "book": {"language": ""}
+            });
+        });
+    </script>
+</div>
+<script src="gitbook/gitbook.js"></script>
+<script src="gitbook/theme.js"></script>
+<script src="gitbook/gitbook-plugin-comment/plugin.js"></script>
+<script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="gitbook/gitbook-plugin-search/search.js"></script>
+<script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<div>
+    <script style="display: none;" type="application/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-57505611-7', 'auto', {name: 'microcdn'});
+        ga('microcdn.send', 'pageview');
+
+        var _cdn_prev_loc = window.location.pathname;
+        window.setInterval(function () {
+            if (window.location.pathname !== _cdn_prev_loc) {
+                _cdn_prev_loc = window.location.pathname;
+                ga('microcdn.send', 'pageview');
+            }
+        }, 100);
+
+    </script>
+</div>
+</body>
+</html>

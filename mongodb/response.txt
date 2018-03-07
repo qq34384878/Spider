@@ -1,0 +1,1 @@
+ <p>您访问过于频繁，已被限制访问</p> <hr/><p> <button onclick="javascript:window.location='/limitaccess.php?limitaccess=veryfy_14cc677bd0468f2d19e3a020c1ca7da0'">点击此处解除限制</button></p> 
